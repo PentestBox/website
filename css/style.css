@@ -5,23 +5,174 @@
  *
  * Made By MaterializeCSS.com
  */
+ body {
+  
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
 
+.navbar {
+  /* background-image: linear-gradient(to right, #1775b8,#7700ff); */
+  background: #2b2a2a;
+  border-bottom: 1px solid #1775b8;
+}
+.navbar li a:hover {
+  color: #0597ff;
+  background: none;
+}
+#logo-container {
+  color: #0597ff;
+}
 .icon-block {
   padding: 0 15px;
 }
 .icon-block .material-icons {
-	font-size: inherit;
+  font-size: inherit;
 }
-
 
 .grow {
-transition: 1s ease;
+  transition: 1s ease;
 }
-.grow:hover{
--webkit-transform: scale(1.2);
--ms-transform: scale(1.2);
-transform: scale(1.2);
-transition: 1s ease;
+.grow:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 1s ease;
 }
-.image { }
- .image:hover { -moz-box-shadow: 0 0 10px #ccc; -webkit-box-shadow: 0 0 10px #ccc; box-shadow: 0 0 10px #ccc; } 
+.image {
+  .image:hover {
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+  }
+}
+.container h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1775b8;
+}
+
+.download-section {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.download-section h5 {
+  line-height: 40px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+.download-section h5 span {
+  color: #0597ff;
+}
+
+.btn {
+  background: #1775b8;
+}
+.btn-large {
+  background: #1775b8;
+  margin: 5px 10px;
+}
+
+.btn-large:hover {
+  background: #0597ff;
+}
+.btn:hover {
+  color: #0597ff;
+}
+.typography {
+  background: #3d3d3d;
+  height: 100px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  margin-bottom: 35px;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+}
+.typography div {
+  margin: 0px 15px;
+  position: relative;
+  bottom: 6px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-size: 17px;
+  line-height: 28px;
+}
+.typography-text {
+  display: flex;
+  align-items: center;
+  position: relative;
+  bottom: 15px;
+  color: #cbcbcb;
+}
+
+.cmd-text {
+  background: white;
+  width: 100%;
+  display: block;
+  color: black;
+  padding-left: 9px;
+}
+
+.blue-text{
+  color: #0597ff;
+}
+.light-blue-text{
+  color: #1775b8;
+}
+.video iframe{
+  border-radius: 12px;
+}
+.video{
+  margin-bottom: 39px;
+}
+.page-footer{
+  border-top: 1px solid white;
+  box-shadow: 0px 0px 5px 0px #0597ff;
+}
+
+.cards{
+  background: #3d3d3d;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0px 0px 5px 0px #0597ff;
+  height: 29rem;
+  width: 28rem;
+  overflow: hidden;
+  animation: shadow 7s ease-in infinite ;
+  transition: 0.5s ease-out;
+}
+.cards:hover{
+  transform: translate(0px, -10px);
+}
+.cards:hover .material-icons{
+  text-shadow: 0px 0px 55px #0597ff;
+  
+}
+.cards-container{
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes shadow{
+  0%{
+    box-shadow: 0px 0px 0px 0px #0597ff;
+  }
+  50%{
+    box-shadow: 0px 0px 6px 0px #0597ff;
+  }
+  100%{
+    box-shadow: 0px 0px 0px 0px #1775b8;
+  }
+}
+
+.twitter-card{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* gap: 70px; */
+  justify-content: space-evenly;
+}
