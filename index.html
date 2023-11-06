@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@flickr" />
-<meta name="twitter:title" content="PentestBox" />
-<meta name="twitter:description" content="PentestBox is an Opensource PreConfigured Portable Penetration Testing Environment for the Windows Operating System." />
-<meta name="twitter:image" content="https://pentestbox.org/img/logo.png" />
-   <meta property="og:image" content="https://i.imgur.com/HHTsh3W.png"/>
-   <meta property="og:description" content="PentestBox is an Opensource PreConfigured Portable Penetration Testing Environment for the Windows Operating System" />
-   <meta property="og:title" content="PentestBox" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@flickr" />
+  <meta name="twitter:title" content="PentestBox" />
+  <meta name="twitter:description"
+    content="PentestBox is an Opensource PreConfigured Portable Penetration Testing Environment for the Windows Operating System." />
+  <meta name="twitter:image" content="https://pentestbox.org/img/logo.png" />
+  <meta property="og:image" content="https://i.imgur.com/HHTsh3W.png" />
+  <meta property="og:description"
+    content="PentestBox is an Opensource PreConfigured Portable Penetration Testing Environment for the Windows Operating System" />
+  <meta property="og:title" content="PentestBox" />
 
   <title>Pentest Box</title>
   <meta name="description" content="">
@@ -18,116 +21,163 @@
   <link rel="shortcut icon" href="img/favicon.ico" />
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <style>.typed-cursor{opacity:1;font-weight:100;-webkit-animation:blink 0.7s infinite;-moz-animation:blink 0.7s infinite;-ms-animation:blink 0.7s infinite;-o-animation:blink 0.7s infinite;animation:blink 0.7s infinite;}@-keyframes blink{
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
-        }
-        @-webkit-keyframes blink{
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
-        }
-        @-moz-keyframes blink{
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
-        }
-        @-ms-keyframes blink{
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
-        }
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
-        }
-    </style>
-         <style>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <style>
+    .typed-cursor {
+      opacity: 1;
+      font-weight: 100;
+      -webkit-animation: blink 0.7s infinite;
+      -moz-animation: blink 0.7s infinite;
+      -ms-animation: blink 0.7s infinite;
+      -o-animation: blink 0.7s infinite;
+      animation: blink 0.7s infinite;
+    }
 
-   .terminal {
+    @-keyframes blink {
+      0% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes blink {
+      0% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-moz-keyframes blink {
+      0% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-ms-keyframes blink {
+      0% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* 0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        } */
+  </style>
+  <style>
+    .terminal {
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  }
+    }
 
-  #header_cmd{
-     border: 1px solid grey;
-    background-color: white;
-    position: relative;
-    margin: 0px;
-    top: -7px;
-    padding-bottom: 7px;
-    padding-right: 12px;
-    padding-top: 0.5px;
-    margin-top: -3px;
-    margin-left: 1.5px;
-  }
+    #header_cmd {
+      border: 1px solid grey;
+      background-color: white;
+      position: relative;
+      margin: 0px;
+      top: -7px;
+      padding-bottom: 7px;
+      padding-right: 12px;
+      padding-top: 0.5px;
+      margin-top: -3px;
+      margin-left: 1.5px;
+    }
 
-  .shell {
-    font-family: Consolas, "Liberation Mono", Courier, monospace;
-    font-size: 17px;
-    line-height: 28px;
-    color: #cbcbcb;
-    background-color: #3d3d3d;
-    overflow: hidden;
-    padding: 10px;
-    margin: 0;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-    text-align: left;
-    display: block;
-  }
-  .shell p {
-    margin: 0;
-    font-weight: none;
-    -webkit-backface-visibility: hidden;
-  }
-  }
-   </style>
+    .shell {
+      font-family: Consolas, "Liberation Mono", Courier, monospace;
+      font-size: 17px;
+      line-height: 28px;
+      color: #cbcbcb;
+      background-color: #3d3d3d;
+      overflow: hidden;
+      padding: 10px;
+      margin: 0;
+      border-bottom-left-radius: 7px;
+      border-bottom-right-radius: 7px;
+      text-align: left;
+      display: block;
+    }
+
+    .shell p {
+      margin: 0;
+      font-weight: none;
+      -webkit-backface-visibility: hidden;
+    }
+  </style>
   <script>
     var userLang = navigator.language || navigator.userLanguage;
-    userLang = userLang.substring(0,2);
-    if (userLang==="zh"){
-        window.location.assign("https://pentestbox.org/zh/")
-    }else if (userLang==="vi"){
-        window.location.assign("https://pentestbox.org/vi/")
-    }else if (userLang==="pt"){
-        window.location.assign("https://pentestbox.org/pt/")
-    }else if (userLang==="ar"){
-        window.location.assign("https://pentestbox.org/ar/")
-    }else if (userLang==="it"){
-        window.location.assign("https://pentestbox.org/it/")
-    }else if (userLang==="fr"){
-        window.location.assign("https://pentestbox.org/fr/")
+    userLang = userLang.substring(0, 2);
+    if (userLang === "zh") {
+      window.location.assign("https://pentestbox.org/zh/")
+    } else if (userLang === "vi") {
+      window.location.assign("https://pentestbox.org/vi/")
+    } else if (userLang === "pt") {
+      window.location.assign("https://pentestbox.org/pt/")
+    } else if (userLang === "ar") {
+      window.location.assign("https://pentestbox.org/ar/")
+    } else if (userLang === "it") {
+      window.location.assign("https://pentestbox.org/it/")
+    } else if (userLang === "fr") {
+      window.location.assign("https://pentestbox.org/fr/")
     }
   </script>
 </head>
+
 <body>
 
-  <ul id="dropdown1" class="dropdown-content">
-  <li><a href="https://facebook.com/pentestbox">Facebook</a></li>
-  <li class="divider"></li>
-  <li><a href="https://twitter.com/pentestbox">Twitter</a></li>
+  <ul id="dropdown1" class="dropdown-content ">
+    <li><a href="https://facebook.com/pentestbox">Facebook</a></li>
+    <li class="divider"></li>
+    <li><a href="https://twitter.com/pentestbox">Twitter</a></li>
   </ul>
   <ul id="dropdown2" class="dropdown-content">
-  <li><a href="https://pentestbox.org/ar/">Arabic</a></li>
-  <li class="divider"></li>
-  <li><a href="https://pentestbox.org/zh/">Chinese</a></li>
-  <li class="divider"></li>
-  <li><a href="https://pentestbox.org/en/">English</a></li>
-  <li class="divider"></li>
-  <li><a href="https://pentestbox.org/fr/">French</a></li>
-  <li class="divider"></li>
-  <li><a href="https://pentestbox.org/it/">Italian</a></li>
-  <li class="divider"></li>
-  <li><a href="https://pentestbox.org/pt/">Portuguese</a></li>
-  <li class="divider"></li>
-  <li><a href="https://pentestbox.org/es/">Spanish</a></li>
-  <li class="divider"></li>
-  <li><a href="https://pentestbox.org/vi/">Vietnamese</a></li>
+    <li><a href="https://pentestbox.org/ar/">Arabic</a></li>
+    <li class="divider"></li>
+    <li><a href="https://pentestbox.org/zh/">Chinese</a></li>
+    <li class="divider"></li>
+    <li><a href="https://pentestbox.org/en/">English</a></li>
+    <li class="divider"></li>
+    <li><a href="https://pentestbox.org/fr/">French</a></li>
+    <li class="divider"></li>
+    <li><a href="https://pentestbox.org/it/">Italian</a></li>
+    <li class="divider"></li>
+    <li><a href="https://pentestbox.org/pt/">Portuguese</a></li>
+    <li class="divider"></li>
+    <li><a href="https://pentestbox.org/es/">Spanish</a></li>
+    <li class="divider"></li>
+    <li><a href="https://pentestbox.org/vi/">Vietnamese</a></li>
   </ul>
-  <nav class="light-blue blue darken-3 navbar-fixed" role="navigation">
+  <nav class=" navbar navbar-fixed" role="navigation">
     <div class=""> <a id="logo-container" href="https://pentestbox.org" class="brand-logo">PentestBox</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="https://pentestbox.org/blog/">Blog</a></li>
@@ -136,8 +186,10 @@
         <li><a href="https://docs.pentestbox.org/faq.html">FAQ</a></li>
         <li><a href="https://forum.pentestbox.org">Forum</a></li>
         <li><a href="https://pentestbox.org/#contribute">Contribute</a></li>
-        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Connect<i class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a class="waves-effect waves-light btn" href="https://manifestsecurity.com">A ManifestSecurity.com Project</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Connect<i
+              class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="waves-effect waves-light btn" href="https://manifestsecurity.com">A ManifestSecurity.com
+            Project</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
@@ -157,570 +209,764 @@
     <br>
     <br>
     <br>
-       <a class="waves-effect dropdown-button" href="#!" data-activates="dropdown2">Choose your Language<i class="material-icons right">arrow_drop_down</i></a>
-
-    </div>
-
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <h1 class="header center orange-text"><img src="img/logo.png" height="100" width="100" alt="logo" >PentestBox</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">PentestBox is an Opensource PreConfigured Portable Penetration Testing Environment for the Windows Operating System</h5>
-        <a class="waves-effect waves-light btn-large smoothscroll z-depth-2" href="#download"><i class="material-icons right">file_download</i>Download</a> <a class="waves-effect waves-light btn-large smoothscroll z-depth-2" href="#features">Features</a>
-
-      </div>
-      <div class="header" style="text-align:left;background-color:rgb(245,246,247);"><span id="header_cmd">&nbsp;&nbsp;cmd.exe</span></div>
-                 <div class="shell">
-                   <p style="color:rgb(144,209,12);">C:\Users\Aditya Agrawal\Desktop</p>
-                   <p style="text-align:left;"><span class="prompt" style="color:rgb(88,114,126);" > > </span><span id="typed"></span>
-  <!--    <div class="row center">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
-      </div> -->
-
-    </div>
-    <br>
-    <br>
+    <a class="waves-effect dropdown-button" href="#!" data-activates="dropdown2">Choose your Language<i
+        class="material-icons right">arrow_drop_down</i></a>
 
   </div>
 
-  <div class=" container">
-      <div class="divider"></div>
-    <div class="section">
-      <h3 class="header center blue-grey-text">Why another Pentesting distribution?</h3>
-        <div class="row center">
-          <h5 class="header col s12 light">PentestBox is not like any other linux pentesting distribution which either runs in a virtual machine or on a dual boot envrionment.</h5>
-          <h5 class="header col s12 light">It essentially provides all the security tools as a software package and lets you run them natively on Windows. This effectively eliminates the requirement of virtual machines or dualboot environments on windows.</h5>
-          <h5 class="header col s12 light">It was created because more than 50% of penetration testing distribution users use virtual machines to run those distributions on the Windows operating system.[<a href="download_stats.txt" target="_blank"> Source</a>]</h5>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <h1 class="header center"><img src="img/logo-removebg.png" height="100" width="100" alt="logo">PentestBox</h1>
+      <div class="download-section">
+        <h5 class="header col s12 light">PentestBox is an Opensource PreConfigured Portable Penetration Testing
+          Environment for the <span> Windows </span>Operating System</h5>
+        <a class="waves-effect waves-light btn-large smoothscroll z-depth-2" href="#download"><i
+            class="material-icons right">file_download</i>Download</a> <a
+          class="waves-effect waves-light btn-large smoothscroll z-depth-2" href="#features">Features</a>
 
+      </div>
+      <!-- <div class="header" style="text-align:left;background-color:rgb(245,246,247); color: black;"><span id="header_cmd">&nbsp;&nbsp;cmd.exe</span></div>
+                 <div class="shell">
+                   <p style="color:rgb(144,209,12);">C:\Users\Aditya Agrawal\Desktop</p>
+                   <p style="text-align:left;"><span class="prompt" style="color:rgb(88,114,126);" > > </span><span id="typed"></span>
+    </div> -->
+      <div class="header typography">
+        <span class="cmd-text">cmd.exe</span>
+        <div>
+          <p style="color:rgb(144,209,12);">C:\Users\Aditya Agrawal\Desktop</p>
+          <p class="typography-text"><span class="prompt" style="margin-right: 8px; font-size: 1.5em;">></span><span
+              id="typed"></span></p>
         </div>
       </div>
-      <div class="divider"></div>
-</div>
-
-<div class="container" id="features">
-	 <div class="section">
-      <!--   Icon Section   -->
-      <div class="row" >
-        <h3 class="header center orange-text">Features</h3>
-        <div class="col s12 m3 ">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">insert_emoticon</i></h2>
-            <h5 class="center">Easy to Use</h5>
-
-            <p class="center">It is a simple command line utility.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m3 ">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">Simple Design</h5>
-
-            <p class="center">The traditional green on black terminal comes with a modern twist.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m3 ">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Performance</h5>
-
-            <p class="center">PentestBox runs directly on host machines instead of relying on virtual machines, bringing obvious upgrades in performance.</p>
-          </div>
-        </div>
-        <div class="col s12 m3 ">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">build</i></h2>
-            <h5 class="center">No Dependencies Required</h5>
-
-            <p class="center">All the dependencies required by tools are inside PentestBox, so you can even run PentestBox on freshly installed windows without any hassle.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12 m3 ">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">usb</i></h2>
-            <h5 class="center">Portable</h5>
-
-            <p class="center">PentestBox is entirely portable, so now you can carry your own Penetration Testing Environment on a USB stick. It will take care of all dependencies and configuration required to run tools.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m3 ">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">extension</i></h2>
-            <h5 class="center">Linux Utilities</h5>
-
-            <p class="center">PentestBox contains nearly all linux utilities like bash, cat, chmod, curl, git, gzip, ls, mv, ps, ssh, sh, uname and others. It even contains your favourite text editor "vim". For complete list, please look at <a href="https://tools.pentestbox.org/#linux-utilities" target=_blank">tools.pentestbox.org/#linux-utilities</a>.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m3 ">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">No Drivers Issue</h5>
-
-            <p class="center">Windows already has a large support of drivers for graphics cards and wireless systems, so now you wont have to worry about driver compatibility issues. For example- now you could use your GPU power to crack hashes using project RainbowCrack, which is not compatible on an environment like Linux.</p>
-          </div>
-        </div>
-        <div class="col s12 m3 ">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">view_module</i></h2>
-            <h5 class="center">Modular</h5>
-
-            <p class="center">In the making of PentestBox we have included only the best tools , but in that process we might have missed some tools which you might want to use. In that case you can easily install those tools using <a href="https://docs.pentestbox.org/toolsmanager.html" target=_blank">toolsmanager</a> present inside PentestBox, it can install/update/Uninstall tools which are not already there in PentestBox.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12 m3 ">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">memory</i></h2>
-            <h5 class="center">Less Memory Usage</h5>
-
-            <p class="center">PentestBox runs on the host machine without any need for a virtual machine. So it only need's 20 MB for launching compared to atleast 2GB of RAM need for running virtual machine distributions.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m3 ">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">storage</i></h2>
-            <h5 class="center">Less Disk Usage</h5>
-
-            <p class="center">It is very light on the Disk as well, it requires less than a third of what linux pentesting distro does.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m3 ">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">computer</i></h2>
-            <h5 class="center">Inbuilt Browser</h5>
-
-            <p class="center">PentestBox contains a version of Mozilla Firefox Browser with nearly all its security addons. To know the complete list of addons, please click <a href="https://addons.mozilla.org/en-US/firefox/collections/pentestbox/pentestbox-addons-collection/" target="_blank">here</a>.</p>
-          </div>
-        </div>
-        <div class="col s12 m3 ">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">update</i></h2>
-            <h5 class="center">Update Feature</h5>
-
-            <p class="center">It contains an update feature through which you can keep your tools updated. To know more about update feature, please click <a href="https://docs.pentestbox.org/update.html" target="_blank">here</a>.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-    	<div class="col s12 m3 " style="padding:12%;"></div>
-
-        <div class="col s12 m3 ">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">device_hub</i></h2>
-            <h5 class="center">Can be shared on Network</h5>
-
-            <p class="center">Consider an environment where you wanted to use PentestBox on many computers at the office, lab, etc. Instead of installing PentestBox on each and every computer, you can just install it on one computer and share that folder as a drive to the other computers on the same network. To find out more about this feature, click <a href="https://docs.pentestbox.org/install.html#sharing-pentestbox-on-a-network" target="_blank">here</a>.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m3 ">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">laptop_windows</i></h2>
-
-            <h5 class="center">32 Bit system supported</h5>
-
-            <p class="center">Most users aren’t concerned about 32-bit support because they normally uses 64 bit systems. But this was introduced to turn low-end systems into a Pentesting Environment. Just to give an idea, i have tested PentestBox on <a href="http://www.amazon.com/ASUS-X205TA-11-6-Laptop-Intel/dp/B00SGS7ZII" target="_blank">this $200 machine</a>, and it ran without a hitch.</p>
-          </div>
-        </div>
-      </div>
-</div>
-
-</div>
-    <div class="" style="text-align:center; padding:10px 10px 10px 10px;">
-         <iframe width="853" height="480" src="https://www.youtube.com/embed/0-FV3_Jafws?html5=1" frameborder="0" allowfullscreen></iframe>
-      </div>
-
-<div class="container" id="download">
-  <div class="divider"></div>
-  <div class="header">
-    <h3 class="header left-align blue-grey-text">Select Download options from right</h3>
-      <div class="row">
-		      <div  class="col s7">
-		        <p style="line-height:1.8em;">
-					 There are two variants of PentestBox, one without Metasploit and other one with Metasploit.
-         <br>
-					Antiviruses and Firewalls needs to be switched off to install and operate the version with Metasploit.
-				<br>Download any of the variant by clicking respective download button present on the right side.
-				<br>By default installer extract to <b>C:/PentestBox/</b>, and for its proper functioning do not make any changes.
-					<br>Now refer to <a href="https://tools.pentestbox.org/" target="_blank"> tools.pentestbox.org</a> and <a href="https://docs.pentestbox.org" target="_blank"> docs.pentestbox.org </a> to know about the usage of tools.
-					<br>If you face any problems or have any questions, please check <a href="https://faq.pentestbox.org" target="_blank"> faq.pentestbox.org </a> or post your issue on <a href="https://forum.pentestbox.org" target="_blank">forum.pentestbox.org.</a>
-					Connect with us on <a href="https://www.facebook.com/pentestbox" target="_blank"> Facebook </a> or <a href="https://twitter.com/pentestbox" target="_blank"> Twitter </a> to get updates about PentestBox .<br>
-					Found this project interesting! There are many ways you can contribute, check <a href="https://docs.pentestbox.org/contributing.html" target="_blank">docs.pentestbox.org/contributing</a></p>
-		       </div>
 
 
-           <div  class="col s5">
-            
-            
-                    <h5>PentestBox</h5>
-            <a href="https://sourceforge.net/projects/pentestbox/files/PentestBox-2.3.exe/download" target="_blank"><img src="https://pentestbox.org/img/sf-download-button.png"></a>
-            
-                    <h5>PentestBox with Metasploit </h5>
-                    <a class="modal-trigger" href="#modal2"><img src="https://pentestbox.org/img/sf-download-button.png"></a>
-                
-            
-            
-                      <p>Please do not download PentestBox from any source other than link given above.</p>
-            
-                     </div>
-            
-            
-              <!-- Modal Structure -->
-              <div id="modal1" class="modal">
-                <div class="modal-content">
-                <p>Download from sourceforge</p>
-                  <a class="waves-effect waves-light" href="https://sourceforge.net/projects/pentestbox/files/PentestBox-2.3.exe/download" onclick="Materialize.toast('Thanks for downloading!', 6000, 'rounded')" target="_blank">
-                      <img src="https://pentestbox.org/img/sf-download-button.png"></a>
-                      <br>
-                </div>
-                <div class="modal-footer">
-                  <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
-                </div>
-              </div>
-            
-              <div id="modal2" class="modal">
-                <div class="modal-content">
-                <p>Note: You need to switch off your antivirus and firewalls to install and operate "PentestBox with Metasploit" version.</p>
-                <p>Click on Agree to continue downloading.</p>
-                </div>
-                <div class="modal-footer">
-                  <a href="https://sourceforge.net/projects/pentestbox/files/PentestBox-with-metasploit-2.3.exe/download" target="_blank" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-                  <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat">Disagree</a>
-                </div>
-              </div>
-            
-            </div>
-            </div>
-<div class="divider"></div>
 
-</div>
-<div class="container" id="testimonials">
-        <!--   Icon Section   -->
-        <h3 class="header center orange-text">Over 100,000 users love PentestBox.</h3>
-        <h5 class="header center blue-grey-text">Here is what few of them have to say.</h5>
-        <div class="row">
-          <div class="col s12 m4 14">
-            <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Great Portable PenTest Toolbox<a href="https://t.co/1afuHyCJ5H">https://t.co/1afuHyCJ5H</a></p>&mdash; Achil_Ch (@Achil_Ch) <a href="https://twitter.com/Achil_Ch/status/778551649824636928">September 21, 2016</a></blockquote>
-          </div>
-          <div class="col s12 m4 l4">
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/pentestbox">@pentestbox</a> best portable opensource Pentesting distribution ever!<br><br>Do your download now!!!<a href="https://t.co/I9ff21rAkV">https://t.co/I9ff21rAkV</a> <a href="https://t.co/AVErje8TOr">pic.twitter.com/AVErje8TOr</a></p>&mdash; DeltaPentester (@DeltaPentester) <a href="https://twitter.com/DeltaPentester/status/777127661445476352">September 17, 2016</a></blockquote>
-            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-          </div>
-          <div class="col s12 m4 14">
-            <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">How dit I miss the existence of PentestBox for so long ? <br>Common tools packed in a portable windows installation. <a href="https://t.co/bGtyyOH9XP">https://t.co/bGtyyOH9XP</a></p>&mdash; penteststuff (@penteststuff) <a href="https://twitter.com/penteststuff/status/776396243731816448">September 15, 2016</a></blockquote>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col s12 m4 14">
-            <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Good news for pentester :) <a href="https://t.co/agCVZsYAgd">https://t.co/agCVZsYAgd</a></p>&mdash; Chandrakant Nial (@Chandrakantnial) <a href="https://twitter.com/Chandrakantnial/status/727348910998605824">May 3, 2016</a></blockquote>
-          </div>
-          <div class="col s12 m4 l4">
-            <blockquote class="twitter-tweet" data-lang="en"><p lang="de" dir="ltr">Jetzt mal die PentestBox ausprobieren. Sieht sehr vielversprechend aus. <a href="https://t.co/uEO4AHh4fx">https://t.co/uEO4AHh4fx</a></p>&mdash; Philipp Johann Fritz (@pjf166) <a href="https://twitter.com/pjf166/status/727420727599726593">May 3, 2016</a></blockquote>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          </div>
-          <div class="col s12 m4 14">
-            <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/exploitprotocol">@exploitprotocol</a> Well done on <a href="https://twitter.com/pentestbox">@pentestbox</a> -</p>&mdash; Steve (@spythedude) <a href="https://twitter.com/spythedude/status/715227974509993984">March 30, 2016</a></blockquote>
-          </div>
-        </div>
-        <div class="row" >
-          <div class="col s12 m4 l4">
-            <blockquote class="twitter-tweet" data-lang="en" data-cards="hidden"><p lang="en" dir="ltr">I know that you will love this :)<br>PentestBox v2.0 Demo <a href="https://t.co/sxlCGmYjLE">https://t.co/sxlCGmYjLE</a></p>&mdash; Cuello Whatchaing (@LD_Neck) <a href="https://twitter.com/LD_Neck/status/714960606072274946">March 29, 2016</a></blockquote>
-          </div>
-          <div class="col s12 m4 14">
-            <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">i &lt;3 pentestbox</p>&mdash; Yosef (@FesoyRenzrek) <a href="https://twitter.com/FesoyRenzrek/status/697619201196957696">February 11, 2016</a></blockquote>
-          </div>
-          <div class="col s12 m4 l4">
-          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I think Pentest Box will be the replacement for my VB&#39;s.</p>&mdash; c0mrad (@_c0mrad) <a href="https://twitter.com/_c0mrad/status/689942058149216257">January 20, 2016</a></blockquote>
-        </div>
-      </div>
-      <div class="row">
-          <div class="col s12 m4 l4">
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr">jSQL Injection featured in <a href="https://twitter.com/pentestbox">@pentestbox</a> demo video <a href="https://t.co/qyeJGY8m8R">https://t.co/qyeJGY8m8R</a></p>&mdash; ron190 (@ron190jsql) <a href="https://twitter.com/ron190jsql/status/686241602101182464">January 10, 2016</a></blockquote>
-          </div>
-        <div class="col s12 m4 l4">
-          <blockquote class="twitter-tweet" data-lang="en"><p lang="es" dir="ltr">Muy interesante, para probar....<a href="https://t.co/eGaoy1MwOx">https://t.co/eGaoy1MwOx</a></p>&mdash; Gustavo Speranza (@gjs_sj) <a href="https://twitter.com/gjs_sj/status/680992637525045249">December 27, 2015</a></blockquote>
-      </div>
-      <div class="col s12 m4 l4">
-        <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr">PentestBox<a href="https://t.co/uM8uhx5tqr">https://t.co/uM8uhx5tqr</a><br>- portable<br>- customisable <br>- update function<br>tools<a href="https://t.co/M5JR1BjgeA">https://t.co/M5JR1BjgeA</a> ICYMI <a href="https://t.co/kHCRS8nT0Y">pic.twitter.com/kHCRS8nT0Y</a></p>&mdash; Florian Roth (@cyb3rops) <a href="https://twitter.com/cyb3rops/status/680666052892712960">December 26, 2015</a></blockquote>
-      </div>
     </div>
-        <div class="row">
-          <div class="col s12 m4 l4">
-            <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">cool project for the windows peeps!<a href="https://t.co/NQ2RmU0Doe">https://t.co/NQ2RmU0Doe</a><a href="https://twitter.com/hashtag/windows?src=hash">#windows</a> <a href="https://twitter.com/hashtag/shellz?src=hash">#shellz</a></p>&mdash; D0ctan3 (@linuxoctane) <a href="https://twitter.com/linuxoctane/status/647404217234288640">September 25, 2015</a></blockquote>
+
+    <div class=" container">
+      <div class="divider"></div>
+      <div class="section">
+        <h3 class="header center blue-text" style="text-transform: uppercase; ">Why another Pentesting distribution?
+        </h3>
+        <div class="row center">
+          <h5 class="header col s12 light">PentestBox is not like any other linux pentesting distribution which either
+            runs in a virtual machine or on a dual boot envrionment.</h5>
+          <h5 class="header col s12 light">It essentially provides all the security tools as a software package and lets
+            you run them natively on Windows. This effectively eliminates the requirement of virtual machines or
+            dualboot environments on windows.</h5>
+          <h5 class="header col s12 light">It was created because more than 50% of penetration testing distribution
+            users use virtual machines to run those distributions on the Windows operating system.[<a
+              href="download_stats.txt" target="_blank"> Source</a>]</h5>
+
+        </div>
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div class="container" id="features">
+      <div class="section">
+        <!--   Icon Section   -->
+
+        <h3 class="header center blue-text" style="text-transform: uppercase; margin-bottom: 29px;">Features</h3>
+        <div class="cards-container">
+          <div class=" cards ">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">insert_emoticon</i></h2>
+              <h5 class="center">Easy to Use</h5>
+
+              <p class="center">It is a simple command line utility.</p>
+            </div>
           </div>
-          <div class="col s12 m4 l4">
-            <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">For the windows lovers <a href="https://t.co/NSj7VWGbHG">https://t.co/NSj7VWGbHG</a> is good alternative Cc <a href="https://twitter.com/riyazwalikar">@riyazwalikar</a> <a href="https://twitter.com/exploitprotocol">@exploitprotocol</a>  <a href="https://twitter.com/hashtag/Nullblr?src=hash">#Nullblr</a> <a href="https://twitter.com/hashtag/owaspblr?src=hash">#owaspblr</a></p>&mdash; Abhinav Sejpal (@Abhinav_Sejpal) <a href="https://twitter.com/Abhinav_Sejpal/status/637495428884226048">August 29, 2015</a></blockquote>
+
+          <div class=" cards">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+              <h5 class="center">Simple Design</h5>
+
+              <p class="center">The traditional green on black terminal comes with a modern twist.</p>
+            </div>
           </div>
-          <div class="col s12 m3 l4">
-            <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I found it. PentestBox</p>&mdash; Bill Sempf (@sempf) <a href="https://twitter.com/sempf/status/626491258341617664">July 29, 2015</a></blockquote>
+
+          <div class=" cards">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+              <h5 class="center">Performance</h5>
+
+              <p class="center">PentestBox runs directly on host machines instead of relying on virtual machines,
+                bringing obvious upgrades in performance.</p>
+            </div>
+          </div>
+          <div class=" cards">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">build</i></h2>
+              <h5 class="center">No Dependencies Required</h5>
+
+              <p class="center">All the dependencies required by tools are inside PentestBox, so you can even run
+                PentestBox on freshly installed windows without any hassle.</p>
+            </div>
+          </div>
+
+
+          <div class=" cards">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">usb</i></h2>
+              <h5 class="center">Portable</h5>
+
+              <p class="center">PentestBox is entirely portable, so now you can carry your own Penetration Testing
+                Environment on a USB stick. It will take care of all dependencies and configuration required to run
+                tools.</p>
+            </div>
+          </div>
+
+          <div class=" cards">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">extension</i></h2>
+              <h5 class="center">Linux Utilities</h5>
+
+              <p class="center">PentestBox contains nearly all linux utilities like bash, cat, chmod, curl, git, gzip,
+                ls, mv, ps, ssh, sh, uname and others. It even contains your favourite text editor "vim". For complete
+                list, please look at <a href="https://tools.pentestbox.org/#linux-utilities"
+                  target="_blank">tools.pentestbox.org/#linux-utilities</a>.</p>
+            </div>
+          </div>
+
+          <div class=" cards">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+              <h5 class="center">No Drivers Issue</h5>
+
+              <p class="center">Windows already has a large support of drivers for graphics cards and wireless
+                systems,
+                so now you wont have to worry about driver compatibility issues. For example- now you could use your
+                GPU
+                power to crack hashes using project RainbowCrack, which is not compatible on an environment like
+                Linux.
+              </p>
+            </div>
+          </div>
+          <div class=" cards">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">view_module</i></h2>
+              <h5 class="center">Modular</h5>
+
+              <p class="center">In the making of PentestBox we have included only the best tools , but in that process
+                we might have missed some tools which you might want to use. In that case you can easily install those
+                tools using <a href="https://docs.pentestbox.org/toolsmanager.html" target=_blank">toolsmanager</a>
+                present inside PentestBox, it can install/update/Uninstall tools which are not already there in
+                PentestBox.</p>
+            </div>
+          </div>
+
+
+          <div class=" cards">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">memory</i></h2>
+              <h5 class="center">Less Memory Usage</h5>
+
+              <p class="center">PentestBox runs on the host machine without any need for a virtual machine. So it only
+                need's 20 MB for launching compared to atleast 2GB of RAM need for running virtual machine
+                distributions.</p>
+            </div>
+          </div>
+
+          <div class=" cards">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">storage</i></h2>
+              <h5 class="center">Less Disk Usage</h5>
+
+              <p class="center">It is very light on the Disk as well, it requires less than a third of what linux
+                pentesting distro does.</p>
+            </div>
+          </div>
+
+          <div class=" cards">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">computer</i></h2>
+              <h5 class="center">Inbuilt Browser</h5>
+
+              <p class="center">PentestBox contains a version of Mozilla Firefox Browser with nearly all its security
+                addons. To know the complete list of addons, please click <a
+                  href="https://addons.mozilla.org/en-US/firefox/collections/pentestbox/pentestbox-addons-collection/"
+                  target="_blank">here</a>.</p>
+            </div>
+          </div>
+          <div class=" cards">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">update</i></h2>
+              <h5 class="center">Update Feature</h5>
+
+              <p class="center">It contains an update feature through which you can keep your tools updated. To know
+                more about update feature, please click <a href="https://docs.pentestbox.org/update.html"
+                  target="_blank">here</a>.</p>
+            </div>
+          </div>
+
+
+          <div class=" cards ">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">device_hub</i></h2>
+              <h5 class="center">Can be shared on Network</h5>
+
+              <p class="center">Consider an environment where you wanted to use PentestBox on many computers at the
+                office, lab, etc. Instead of installing PentestBox on each and every computer, you can just install it
+                on one computer and share that folder as a drive to the other computers on the same network. To find
+                out
+                more about this feature, click <a
+                  href="https://docs.pentestbox.org/install.html#sharing-pentestbox-on-a-network"
+                  target="_blank">here</a>.</p>
+            </div>
+          </div>
+
+          <div class="  cards">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">laptop_windows</i></h2>
+
+              <h5 class="center">32 Bit system supported</h5>
+
+              <p class="center">Most users aren’t concerned about 32-bit support because they normally uses 64 bit
+                systems. But this was introduced to turn low-end systems into a Pentesting Environment. Just to give
+                an
+                idea, i have tested PentestBox on <a
+                  href="http://www.amazon.com/ASUS-X205TA-11-6-Laptop-Intel/dp/B00SGS7ZII" target="_blank">this $200
+                  machine</a>, and it ran without a hitch.</p>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col s12 m4 l4">
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="ru" dir="ltr">PentestBox — портативная сборка популярных security утилит<a href="http://t.co/kRKQUZ3tax">http://t.co/kRKQUZ3tax</a> <a href="https://twitter.com/pentestbox">@pentestbox</a></p>&mdash; Luka Safonov (@lukasafonov) <a href="https://twitter.com/lukasafonov/status/613703913431257089">June 24, 2015</a></blockquote>
-          </div>
-          <div class="col s12 m4 l4">
-            <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Check out this Awesome Project::<br><br>PentestBox: A Portable Penetration Testing for Windows. <a href="https://t.co/h7GD1E7wJv">https://t.co/h7GD1E7wJv</a></p>&mdash; The Hacker News (@TheHackersNews) <a href="https://twitter.com/TheHackersNews/status/612160004964003840">June 20, 2015</a></blockquote>
-          </div>
-          <div class="col s12 m4 l4">
-            <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Because we cannot take Windows out of our life. Gud work <a href="https://twitter.com/exploitprotocol">@exploitprotocol</a> . Wil try it soon. <a href="https://t.co/k6YVQOi6pN">https://t.co/k6YVQOi6pN</a></p>&mdash; Lokesh (@MaverickRocky02) <a href="https://twitter.com/MaverickRocky02/status/605801473276919809">June 2, 2015</a></blockquote>
+
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="divider"></div>
+
+      <br>
+      <br>
+      <br>
+      <!-- ///////////////////////////////////// -->
+      <h3 style="text-transform: uppercase;" class="center  ">watch the video to gain more information about the <span
+          class="blue-text"> pentestbox </span></h3>
+      <div class="video" style="text-align:center; padding:10px 10px 10px 10px;">
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/0-FV3_Jafws?html5=1" frameborder="0"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="container" id="download">
+        <div class="divider"></div>
+        <div class="header">
+          <h3 class="header left-align blue-text">Select Download options from right</h3>
+          <div class="row">
+            <div class="col s7">
+              <p style="line-height:1.8em;">
+                There are two variants of PentestBox, one without Metasploit and other one with Metasploit.
+                <br>
+                Antiviruses and Firewalls needs to be switched off to install and operate the version with Metasploit.
+                <br>Download any of the variant by clicking respective download button present on the right side.
+                <br>By default installer extract to <b>C:/PentestBox/</b>, and for its proper functioning do not make
+                any
+                changes.
+                <br>Now refer to <a href="https://tools.pentestbox.org/" target="_blank"> tools.pentestbox.org</a> and
+                <a href="https://docs.pentestbox.org" target="_blank"> docs.pentestbox.org </a> to know about the usage
+                of
+                tools.
+                <br>If you face any problems or have any questions, please check <a href="https://faq.pentestbox.org"
+                  target="_blank"> faq.pentestbox.org </a> or post your issue on <a href="https://forum.pentestbox.org"
+                  target="_blank">forum.pentestbox.org.</a>
+                Connect with us on <a href="https://www.facebook.com/pentestbox" target="_blank"> Facebook </a> or <a
+                  href="https://twitter.com/pentestbox" target="_blank"> Twitter </a> to get updates about PentestBox
+                .<br>
+                Found this project interesting! There are many ways you can contribute, check <a
+                  href="https://docs.pentestbox.org/contributing.html"
+                  target="_blank">docs.pentestbox.org/contributing</a>
+              </p>
+            </div>
+
+
+            <div class="col s5">
+
+
+              <h5>PentestBox</h5>
+              <a href="https://sourceforge.net/projects/pentestbox/files/PentestBox-2.3.exe/download"
+                target="_blank"><img src="https://pentestbox.org/img/sf-download-button.png"></a>
+
+              <h5>PentestBox with Metasploit </h5>
+              <a class="modal-trigger" href="#modal2"><img src="https://pentestbox.org/img/sf-download-button.png"></a>
+
+
+
+              <p>Please do not download PentestBox from any source other than link given above.</p>
+
+            </div>
+
+
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <p>Download from sourceforge</p>
+                <a class="waves-effect waves-light"
+                  href="https://sourceforge.net/projects/pentestbox/files/PentestBox-2.3.exe/download"
+                  onclick="Materialize.toast('Thanks for downloading!', 6000, 'rounded')" target="_blank">
+                  <img src="https://pentestbox.org/img/sf-download-button.png"></a>
+                <br>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+              </div>
+            </div>
+
+            <div id="modal2" class="modal">
+              <div class="modal-content">
+                <p>Note: You need to switch off your antivirus and firewalls to install and operate "PentestBox with
+                  Metasploit" version.</p>
+                <p>Click on Agree to continue downloading.</p>
+              </div>
+              <div class="modal-footer">
+                <a href="https://sourceforge.net/projects/pentestbox/files/PentestBox-with-metasploit-2.3.exe/download"
+                  target="_blank" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat">Disagree</a>
+              </div>
+            </div>
+
           </div>
         </div>
         <div class="divider"></div>
 
-</div>
-<div class="container" id="reviews">
+      </div>
+      <br>
+  
+      <br>
+      <!-- //////////////////////////////////////////// -->
+      
+      <h3 class="header center blue-text" style="text-transform: uppercase;">Over 100,000 users love PentestBox.</h3>
+      
+      <h5 class="header center " style="color: aqua;">Here is what few of them have to say.</h5>
+      <br>
+      <br>
+      <div class="twitter-card" >
+        <blockquote class="twitter-tweet" data-lang="en">
+          <p lang="en" dir="ltr">Great Portable PenTest Toolbox<a
+              href="https://t.co/1afuHyCJ5H">https://t.co/1afuHyCJ5H</a></p>&mdash; Achil_Ch (@Achil_Ch) <a
+            href="https://twitter.com/Achil_Ch/status/778551649824636928">September 21, 2016</a>
+        </blockquote>
 
-        <h3 class="header center orange-text">Read some of the public reviews in your native language.</h3>
+        <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
+          <p lang="en" dir="ltr"><a href="https://twitter.com/pentestbox">@pentestbox</a> best portable opensource
+            Pentesting distribution ever!<br><br>Do your download now!!!<a
+              href="https://t.co/I9ff21rAkV">https://t.co/I9ff21rAkV</a> <a
+              href="https://t.co/AVErje8TOr">pic.twitter.com/AVErje8TOr</a></p>&mdash; DeltaPentester
+          (@DeltaPentester) <a href="https://twitter.com/DeltaPentester/status/777127661445476352">September 17,
+            2016</a>
+
+        </blockquote>
+
+       
+
+        <blockquote class="twitter-tweet" data-lang="en">
+          <p lang="en" dir="ltr">Good news for pentester :) <a
+              href="https://t.co/agCVZsYAgd">https://t.co/agCVZsYAgd</a></p>&mdash; Chandrakant Nial
+          (@Chandrakantnial) <a href="https://twitter.com/Chandrakantnial/status/727348910998605824">May 3, 2016</a>
+        </blockquote>
+
+        <blockquote class="twitter-tweet" data-lang="en">
+          <p lang="de" dir="ltr">Jetzt mal die PentestBox ausprobieren. Sieht sehr vielversprechend aus. <a
+              href="https://t.co/uEO4AHh4fx">https://t.co/uEO4AHh4fx</a></p>&mdash; Philipp Johann Fritz (@pjf166)
+          <a href="https://twitter.com/pjf166/status/727420727599726593">May 3, 2016</a>
+        </blockquote>
+
+        <blockquote class="twitter-tweet" data-lang="en">
+          <p lang="en" dir="ltr"><a href="https://twitter.com/exploitprotocol">@exploitprotocol</a> Well done on <a
+              href="https://twitter.com/pentestbox">@pentestbox</a> -</p>&mdash; Steve (@spythedude) <a
+            href="https://twitter.com/spythedude/status/715227974509993984">March 30, 2016</a>
+        </blockquote>
+
+        <blockquote class="twitter-tweet" data-lang="en" data-cards="hidden">
+          <p lang="en" dir="ltr">I know that you will love this :)<br>PentestBox v2.0 Demo <a
+              href="https://t.co/sxlCGmYjLE">https://t.co/sxlCGmYjLE</a></p>&mdash; Cuello Whatchaing (@LD_Neck) <a
+            href="https://twitter.com/LD_Neck/status/714960606072274946">March 29, 2016</a>
+        </blockquote>
+
+        <blockquote class="twitter-tweet" data-lang="en">
+          <p lang="en" dir="ltr">i &lt;3 pentestbox</p>&mdash; Yosef (@FesoyRenzrek) <a
+            href="https://twitter.com/FesoyRenzrek/status/697619201196957696">February 11, 2016</a>
+        </blockquote>
+
+        
+
+        <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
+          <p lang="en" dir="ltr">jSQL Injection featured in <a href="https://twitter.com/pentestbox">@pentestbox</a>
+            demo video <a href="https://t.co/qyeJGY8m8R">https://t.co/qyeJGY8m8R</a></p>&mdash; ron190 (@ron190jsql)
+          <a href="https://twitter.com/ron190jsql/status/686241602101182464">January 10, 2016</a>
+        </blockquote>
+
+        <blockquote class="twitter-tweet" data-lang="en">
+          <p lang="es" dir="ltr">Muy interesante, para probar....<a
+              href="https://t.co/eGaoy1MwOx">https://t.co/eGaoy1MwOx</a></p>&mdash; Gustavo Speranza (@gjs_sj) <a
+            href="https://twitter.com/gjs_sj/status/680992637525045249">December 27, 2015</a>
+        </blockquote>
+
+        <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
+          <p lang="en" dir="ltr">PentestBox<a href="https://t.co/uM8uhx5tqr">https://t.co/uM8uhx5tqr</a><br>-
+            portable<br>- customisable <br>- update function<br>tools<a
+              href="https://t.co/M5JR1BjgeA">https://t.co/M5JR1BjgeA</a> ICYMI <a
+              href="https://t.co/kHCRS8nT0Y">pic.twitter.com/kHCRS8nT0Y</a></p>&mdash; Florian Roth (@cyb3rops) <a
+            href="https://twitter.com/cyb3rops/status/680666052892712960">December 26, 2015</a>
+        </blockquote>
+
+        
+
+        <blockquote class="twitter-tweet" data-lang="en">
+          <p lang="en" dir="ltr">For the windows lovers <a href="https://t.co/NSj7VWGbHG">https://t.co/NSj7VWGbHG</a>
+            is good alternative Cc <a href="https://twitter.com/riyazwalikar">@riyazwalikar</a> <a
+              href="https://twitter.com/exploitprotocol">@exploitprotocol</a> <a
+              href="https://twitter.com/hashtag/Nullblr?src=hash">#Nullblr</a> <a
+              href="https://twitter.com/hashtag/owaspblr?src=hash">#owaspblr</a></p>&mdash; Abhinav Sejpal
+          (@Abhinav_Sejpal) <a href="https://twitter.com/Abhinav_Sejpal/status/637495428884226048">August 29,
+            2015</a>
+        </blockquote>
+
+        <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
+          <p lang="ru" dir="ltr">PentestBox — портативная сборка популярных security утилит<a
+              href="http://t.co/kRKQUZ3tax">http://t.co/kRKQUZ3tax</a> <a
+              href="https://twitter.com/pentestbox">@pentestbox</a></p>&mdash; Luka Safonov (@lukasafonov) <a
+            href="https://twitter.com/lukasafonov/status/613703913431257089">June 24, 2015</a>
+        </blockquote>
+
+        <blockquote class="twitter-tweet" data-lang="en">
+          <p lang="en" dir="ltr">Check out this Awesome Project::<br><br>PentestBox: A Portable Penetration Testing
+            for Windows. <a href="https://t.co/h7GD1E7wJv">https://t.co/h7GD1E7wJv</a></p>&mdash; The Hacker News
+          (@TheHackersNews) <a href="https://twitter.com/TheHackersNews/status/612160004964003840">June 20, 2015</a>
+        </blockquote>
+
+        <blockquote class="twitter-tweet" data-lang="en">
+          <p lang="en" dir="ltr">Because we cannot take Windows out of our life. Gud work <a
+              href="https://twitter.com/exploitprotocol">@exploitprotocol</a> . Wil try it soon. <a
+              href="https://t.co/k6YVQOi6pN">https://t.co/k6YVQOi6pN</a></p>&mdash; Lokesh (@MaverickRocky02) <a
+            href="https://twitter.com/MaverickRocky02/status/605801473276919809">June 2, 2015</a>
+        </blockquote>
+      </div>
+
+<br>
+<br>
+<br>
+      <div class="divider"></div>
+      <!-- //////////////////////////////////////////// -->
+      <br>
+      <br>
+      <br>
+      <div class="container" id="reviews">
+
+        <h3 class="header center blue-text" style="text-transform: uppercase;">Read some of the public reviews in your
+          native language.</h3>
         <div class="row">
           <div class="col s12 m4 l4">
             <div class="icon-block">
               <h4 class="left-align"><img src="https://pentestbox.org/flags/ru.svg" width=50 height=40> Russian</h4>
               <ul>
-                <li><a href="https://habrahabr.ru/company/pentestit/blog/260913/" target="_blank"><i class="material-icons">label_outline</i> PentestBox — портативная сборка популярных security утилит</a></li>
-                <li><a href="https://habrahabr.ru/company/pentestit/blog/276477/" target="_blank"><i class="material-icons">label_outline</i> Лучшие дистрибутивы для проведения тестирования на проникновение</a></li>
-                <li><a href="https://cryptoworld.su/%D1%85%D0%B0%D0%BA%D0%B5%D1%80%D1%81%D0%BA%D0%B8%D0%B9-%D0%B4%D0%B8%D1%81%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%82%D0%B8%D0%B2-%D0%BD%D0%B0-%D0%B1%D0%B0%D0%B7%D0%B5-windows/" target="_blank"><i class="material-icons">label_outline</i> Хакерский дистрибутив на базе Windows</a></li>
+                <li><a href="https://habrahabr.ru/company/pentestit/blog/260913/" target="_blank"><i
+                      class="material-icons">label_outline</i> PentestBox — портативная сборка популярных security
+                    утилит</a></li>
+                <li><a href="https://habrahabr.ru/company/pentestit/blog/276477/" target="_blank"><i
+                      class="material-icons">label_outline</i> Лучшие дистрибутивы для проведения тестирования на
+                    проникновение</a></li>
+                <li><a
+                    href="https://cryptoworld.su/%D1%85%D0%B0%D0%BA%D0%B5%D1%80%D1%81%D0%BA%D0%B8%D0%B9-%D0%B4%D0%B8%D1%81%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%82%D0%B8%D0%B2-%D0%BD%D0%B0-%D0%B1%D0%B0%D0%B7%D0%B5-windows/"
+                    target="_blank"><i class="material-icons">label_outline</i> Хакерский дистрибутив на базе
+                    Windows</a>
+                </li>
             </div>
           </div>
           <div class="col s12 m4 l4">
             <div class="icon-block">
               <h4 class="left-align"><img src="https://pentestbox.org/flags/fr.svg" width=50 height=40> French</h4>
               <ul>
-                <li><a href="http://korben.info/pentestbox.html" target="_blank"><i class="material-icons">label_outline</i> PentestBox -Korben</a></li>
-                <li><a href="http://www.funinformatique.com/pentestbox-sinitier-au-pentest-sous-windows/" target="_blank"><i class="material-icons">label_outline</i> PentestBox: s’initier au pentest sous Windows</a></li>
+                <li><a href="http://korben.info/pentestbox.html" target="_blank"><i
+                      class="material-icons">label_outline</i>
+                    PentestBox -Korben</a></li>
+                <li><a href="http://www.funinformatique.com/pentestbox-sinitier-au-pentest-sous-windows/"
+                    target="_blank"><i class="material-icons">label_outline</i> PentestBox: s’initier au pentest sous
+                    Windows</a></li>
             </div>
           </div>
           <div class="col s12 m4 l4">
             <div class="icon-block">
               <h4 class="left-align"><img src="https://pentestbox.org/flags/es.svg" width=50 height=40> Spanish</h4>
               <ul>
-                <li><a href="http://blog.segu-info.com.ar/2015/08/pentestbox-pentesting-portable-en-linea.html" target="_blank"><i class="material-icons">label_outline</i> PentestBox: Pentesting portable en línea de comandos</a></li>
-                <li><a href="http://www.cyberhades.com/2015/06/04/coleccion-de-herramientas-de-pentesting-para-entornos-windows/" target="_blank"><i class="material-icons">label_outline</i> Colección de herramientas de “pentesting” para entornos Windows</a></li>
-                <li><a href="http://www.redeszone.net//2015/06/04/pentest-box-sera-tu-herramienta-favorita-de-pentesting-para-sistemas-windows/" target="_blank"><i class="material-icons">label_outline</i> Pentest Box será tu herramienta favorita de pentesting para sistemas Windows</a></li>
-                <li><a href="http://www.hackingpublico.net/pentestbox-pentesting-en-windows/" target="_blank"><i class="material-icons">label_outline</i> PentestBox | Pentesting en Windows</a></li>
+                <li><a href="http://blog.segu-info.com.ar/2015/08/pentestbox-pentesting-portable-en-linea.html"
+                    target="_blank"><i class="material-icons">label_outline</i> PentestBox: Pentesting portable en línea
+                    de comandos</a></li>
+                <li><a
+                    href="http://www.cyberhades.com/2015/06/04/coleccion-de-herramientas-de-pentesting-para-entornos-windows/"
+                    target="_blank"><i class="material-icons">label_outline</i> Colección de herramientas de
+                    “pentesting”
+                    para entornos Windows</a></li>
+                <li><a
+                    href="http://www.redeszone.net//2015/06/04/pentest-box-sera-tu-herramienta-favorita-de-pentesting-para-sistemas-windows/"
+                    target="_blank"><i class="material-icons">label_outline</i> Pentest Box será tu herramienta favorita
+                    de pentesting para sistemas Windows</a></li>
+                <li><a href="http://www.hackingpublico.net/pentestbox-pentesting-en-windows/" target="_blank"><i
+                      class="material-icons">label_outline</i> PentestBox | Pentesting en Windows</a></li>
             </div>
-          </div
+          </div>
+          <div class="row">
+            <div class="col s12 m4 l4">
+              <div class="icon-block">
+                <h4 class="left-align"><img src="https://pentestbox.org/flags/tr.svg" width=50 height=40> Turkish</h4>
+                <ul>
+                  <li><a href="http://ramazanguclu.com.tr/windows-ortaminda-linux-rahatligi-pentestbox-tools/"
+                      target="_blank"><i class="material-icons">label_outline</i> Windows Ortamında Linux Rahatlığı –
+                      PentestBox Tools</a></li>
+              </div>
+            </div>
+            <div class="col s12 m4 l4">
+              <div class="icon-block">
+                <h4 class="left-align"><img src="https://pentestbox.org/flags/pt.svg" width=50 height=40> Portugese</h4>
+                <ul>
+                  <li><a href="http://www.100security.com.br/pentestbox/" target="_blank"><i
+                        class="material-icons">label_outline</i> PenTestBox – Ferramenta de PenTest (Windows)</a></li>
+                  <li><a href="http://securityattack.com.br/pentest-box-ferramentas-de-seguranca-no-windows/"
+                      target="_blank"><i class="material-icons">label_outline</i> Pentest Box – Ferramentas de segurança
+                      no Windows</a></li>
+              </div>
+            </div>
+            <div class="col s12 m4 l4">
+              <div class="icon-block">
+                <h4 class="left-align"><img src="https://pentestbox.org/flags/ro.svg" width=50 height=40> Romanian</h4>
+                <ul>
+                  <li><a
+                      href="http://www.worldit.info/articole/cum-poti-face-teste-de-securitate-it-penetration-testing-folosind-windows/"
+                      target="_blank"><i class="material-icons">label_outline</i> Cum poti face teste de securitate IT
+                      (Penetration Testing) folosind Windows?</a></li>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m4 l4">
+              <div class="icon-block">
+                <h4 class="left-align">Arabic</h4>
+                <ul>
+                  <li><a href="http://www.th3professional.com/2015/09/pentest-box.html" target="_blank"><i
+                        class="material-icons">label_outline</i> Pentest Box منصة اختبار الاختراق والحماية لمستخدمي
+                      ويندوز</a></li>
+              </div>
+            </div>
+            <div class="col s12 m4 l4">
+              <div class="icon-block">
+                <h4 class="left-align"><img src="https://pentestbox.org/flags/th.svg" width=50 height=40> Thai</h4>
+                <ul>
+                  <li><a href="https://www.techtalkthai.com/pentest-box-portable-tool-for-windows/" target="_blank"><i
+                        class="material-icons">label_outline</i> Pentest Box: เครื่องมือทดสอบเจาะระบบแบบพกพาสำหรับ
+                      Windows</a></li>
+              </div>
+            </div>
+            <div class="col s12 m4 l4">
+              <div class="icon-block">
+                <h4 class="left-align">English</h4>
+                <ul>
+                  <li><a href="http://www.kitploit.com/2016/03/pentestbox-20-portable-penetration.html"
+                      target="_blank"><i class="material-icons">label_outline</i> PentestBox 2.0 - Portable Penetration
+                      Testing
+                      Distribution for Windows Environments</a></li>
+                  <li><a href="http://www.ehacking.net/2015/06/pentestbox-penetration-testing.html" target="_blank"><i
+                        class="material-icons">label_outline</i> PentestBox: Penetration Testing Distribution for
+                      Windows</a></li>
+                  <li><a
+                      href="https://www.digitalmunition.me/2016/03/pentestbox-2-0-portable-penetration-testing-distribution-windows-environments/"
+                      target="_blank"><i class="material-icons">label_outline</i> PentestBox 2.0 – Portable Penetration
+                      Testing Distribution for Windows Environments</a></li>
+                  <li><a
+                      href="http://www.csoonline.com/article/3066907/security/salted-hash-rehashed-the-weekly-news-recap-for-may-7-2016.html"
+                      target="_blank"><i class="material-icons">label_outline</i> Neat tool: Pentest Box</a></li>
+                  <li><a
+                      href="http://buffercode.in/pentestbox-a-portable-penetration-testing-distribution-for-windows-environments/"
+                      target="_blank"><i class="material-icons">label_outline</i> PentestBox: A Portable Penetration
+                      Testing Distribution for Windows Environments</a></li>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="row">
-          <div class="col s12 m4 l4">
-            <div class="icon-block">
-              <h4 class="left-align"><img src="https://pentestbox.org/flags/tr.svg" width=50 height=40> Turkish</h4>
+      </div>
+
+      <div class="container" id="contribute">
+        <div class="divider"></div>
+        <div class="header">
+          <h3 class="header center blue-text" style="text-transform: uppercase;">Contribute</h3>
+          <h5 class="header center light-blue-text">If you found this project interesting, you could make some
+            contribution
+            to it to make it even better!</h5>
+
+          <div class="row">
+            <div class="col s7">
+              <p>
+                There are many ways you can contribute to this project, some of them are listed below:- </p>
               <ul>
-                <li><a href="http://ramazanguclu.com.tr/windows-ortaminda-linux-rahatligi-pentestbox-tools/" target="_blank"><i class="material-icons">label_outline</i> Windows Ortamında Linux Rahatlığı – PentestBox Tools</a></li>
+                <li><i class="material-icons">keyboard_arrow_right</i>Help me complete my <a
+                    href="https://todo.pentestbox.org/" href="_blank">todo</a> list.</li>
+                <li><i class="material-icons">keyboard_arrow_right</i>Improve documentation or website grammar(I'm not a
+                  native English speaker)</li>
+                <li><i class="material-icons">keyboard_arrow_right</i>Translate the website or the relevant
+                  documentation
+                  into your native language.</li>
+                <li><i class="material-icons">keyboard_arrow_right</i>Submit a Bug Report</li>
+                <li><i class="material-icons">keyboard_arrow_right</i>Suggest features and functionality.</li>
+                <li><i class="material-icons">keyboard_arrow_right</i>Improve PentestBox website UI.</li>
+                <li><i class="material-icons">keyboard_arrow_right</i>Spread the word in conference, local meetups or in
+                  your circle.</li>
+                <p>Know more about contributing at <a href="https://docs.pentestbox.org/contributing.html"
+                    target="_blank">docs.pentestbox.org/contributing.html</a></p>
+                <p>I highly appreciate time and efforts our contributors have put up to make PentestBox more awesome,
+                  you
+                  can view list of <a href="https://docs.pentestbox.org/contributing.html#our-awesome-contributors">our
+                    awesome contributors</a>.</p>
+                <ul>
             </div>
+
+
+
+
+
           </div>
-          <div class="col s12 m4 l4">
-            <div class="icon-block">
-              <h4 class="left-align"><img src="https://pentestbox.org/flags/pt.svg" width=50 height=40> Portugese</h4>
-              <ul>
-                <li><a href="http://www.100security.com.br/pentestbox/" target="_blank"><i class="material-icons">label_outline</i> PenTestBox – Ferramenta de PenTest (Windows)</a></li>
-                <li><a href="http://securityattack.com.br/pentest-box-ferramentas-de-seguranca-no-windows/" target="_blank"><i class="material-icons">label_outline</i> Pentest Box – Ferramentas de segurança no Windows</a></li>
-            </div>
-          </div>
-          <div class="col s12 m4 l4">
-            <div class="icon-block">
-              <h4 class="left-align"><img src="https://pentestbox.org/flags/ro.svg" width=50 height=40> Romanian</h4>
-              <ul>
-                <li><a href="http://www.worldit.info/articole/cum-poti-face-teste-de-securitate-it-penetration-testing-folosind-windows/" target="_blank"><i class="material-icons">label_outline</i> Cum poti face teste de securitate IT (Penetration Testing) folosind Windows?</a></li>
-            </div>
-          </div>
+
         </div>
-        <div class="row">
-          <div class="col s12 m4 l4">
-            <div class="icon-block">
-              <h4 class="left-align">Arabic</h4>
-              <ul>
-                <li><a href="http://www.th3professional.com/2015/09/pentest-box.html" target="_blank"><i class="material-icons">label_outline</i> Pentest Box منصة اختبار الاختراق والحماية لمستخدمي ويندوز</a></li>
-            </div>
-          </div>
-          <div class="col s12 m4 l4">
-            <div class="icon-block">
-              <h4 class="left-align"><img src="https://pentestbox.org/flags/th.svg" width=50 height=40> Thai</h4>
-              <ul>
-                <li><a href="https://www.techtalkthai.com/pentest-box-portable-tool-for-windows/" target="_blank"><i class="material-icons">label_outline</i> Pentest Box: เครื่องมือทดสอบเจาะระบบแบบพกพาสำหรับ Windows</a></li>
-            </div>
-          </div>
-          <div class="col s12 m4 l4">
-            <div class="icon-block">
-              <h4 class="left-align">English</h4>
-              <ul>
-                <li><a href="http://www.kitploit.com/2016/03/pentestbox-20-portable-penetration.html" target="_blank"><i class="material-icons">label_outline</i> PentestBox 2.0 - Portable Penetration Testing Distribution for Windows Environments</a></li>
-                <li><a href="http://www.ehacking.net/2015/06/pentestbox-penetration-testing.html" target="_blank"><i class="material-icons">label_outline</i> PentestBox: Penetration Testing Distribution for Windows</a></li>
-                <li><a href="https://www.digitalmunition.me/2016/03/pentestbox-2-0-portable-penetration-testing-distribution-windows-environments/" target="_blank"><i class="material-icons">label_outline</i> PentestBox 2.0 – Portable Penetration Testing Distribution for Windows Environments</a></li>
-                <li><a href="http://www.csoonline.com/article/3066907/security/salted-hash-rehashed-the-weekly-news-recap-for-may-7-2016.html" target="_blank"><i class="material-icons">label_outline</i> Neat tool: Pentest Box</a></li>
-                <li><a href="http://buffercode.in/pentestbox-a-portable-penetration-testing-distribution-for-windows-environments/" target="_blank"><i class="material-icons">label_outline</i> PentestBox: A Portable Penetration Testing Distribution for Windows Environments</a></li>
-            </div>
-          </div>
-        </div>
-</div>
-</div>
-
-<div class="container" id="contribute">
-  <div class="divider"></div>
-  <div class="header">
-        <h3 class="header center orange-text">Contribute</h3>
-        <h5 class="header center blue-grey-text">If you found this project interesting, you could make some contribution to it to make it even better!</h5>
-
-        <div class="row">
-		      <div  class="col s7">
-		        <p>
-					 There are many ways you can contribute to this project, some of them are listed below:- </p>
-           <ul>
-         <li><i class="material-icons">keyboard_arrow_right</i>Help me complete my <a href="https://todo.pentestbox.org/" href="_blank">todo</a> list.</li>
-<li><i class="material-icons">keyboard_arrow_right</i>Improve documentation or website grammar(I'm not a native English speaker)</li>
-<li><i class="material-icons">keyboard_arrow_right</i>Translate the website or the relevant documentation into your native language.</li>
-<li><i class="material-icons">keyboard_arrow_right</i>Submit a Bug Report</li>
-<li><i class="material-icons">keyboard_arrow_right</i>Suggest features and functionality.</li>
-<li><i class="material-icons">keyboard_arrow_right</i>Improve PentestBox website UI.</li>
-<li><i class="material-icons">keyboard_arrow_right</i>Spread the word in conference, local meetups or in your circle.</li>
-<p>Know more about contributing at <a href="https://docs.pentestbox.org/contributing.html" target="_blank">docs.pentestbox.org/contributing.html</a></p>
-<p>I highly appreciate time and efforts our contributors have put up to make PentestBox more awesome, you can view list of <a href="https://docs.pentestbox.org/contributing.html#our-awesome-contributors">our awesome contributors</a>.</p>
-<ul>
-</div>
-
-
-			  
-
-
-			   </div>
-
-</div>
-</div>
-</div>
+      </div>
+    </div>
 </body>
 
 
-  <footer class="page-footer blue darken-3">
+<footer class="page-footer blue darken-3">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">PentestBox</h5>
+        <p class="grey-text text-lighten-4">PentestBox is an Opensource PreConfigured Portable Penetration Testing
+          Environment for Windows Operating System. It is based on <a href="https://conemu.github.io/"
+            class="orange-text text-lighten-3">ConEmu</a> and <a href="https://github.com/cmderdev/cmder"
+            class="orange-text text-lighten-3" target="_blank">cmder</a>. Credits goes to their developers for providing
+          such an awesome platform to build up PentestBox.</p>
+
+
+      </div>
+      <div class="col l3 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li><a class="white-text" href="https://docs.pentestbox.org">Documentation</a></li>
+          <li><a class="white-text" href="https://docs.pentestbox.org/faq.html">FAQ</a></li>
+          <li><a class="white-text" href="https://pentestbox.org/blog/">Blog</a></li>
+          <li><a class="white-text" href="https://tools.pentestbox.org">Tools List</a></li>
+        </ul>
+      </div>
+      <div class="col l3 s12">
+        <h5 class="white-text">Connect</h5>
+        <ul>
+          <li><a class="white-text" href="https://facebook.com/PentestBox">Facebook</a></li>
+          <li><a class="white-text" href="https://twitter.com/PentestBox">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="col l3 s12 white-text">
+        <ul>
+          <li><a class="white-text" href="mailto:aditya@manifestsecurity.com">Contact: aditya@manifestsecurity.com</a>
+          </li>
+        </ul>
+        Made with <span style="color: #e74c3c">&hearts;</span> in India
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
     <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">PentestBox</h5>
-          <p class="grey-text text-lighten-4">PentestBox is an Opensource PreConfigured Portable Penetration Testing Environment for Windows Operating System. It is based on <a href="https://conemu.github.io/" class="orange-text text-lighten-3">ConEmu</a> and <a href="https://github.com/cmderdev/cmder" class="orange-text text-lighten-3" target="_blank">cmder</a>. Credits goes to their developers for providing such an awesome platform to build up PentestBox.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Links</h5>
-          <ul>
-            <li><a class="white-text" href="https://docs.pentestbox.org">Documentation</a></li>
-            <li><a class="white-text" href="https://docs.pentestbox.org/faq.html">FAQ</a></li>
-            <li><a class="white-text" href="https://pentestbox.org/blog/">Blog</a></li>
-            <li><a class="white-text" href="https://tools.pentestbox.org">Tools List</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="https://facebook.com/PentestBox">Facebook</a></li>
-            <li><a class="white-text" href="https://twitter.com/PentestBox">Twitter</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12 white-text">
-          <ul>
-            <li><a class="white-text" href="mailto:aditya@manifestsecurity.com">Contact: aditya@manifestsecurity.com</a></li>
-          </ul>
-          Made with <span style="color: #e74c3c">&hearts;</span> in India
-        </div>
-      </div>
+      Copyright 2016. <a class="orange-text text-lighten-3" href="http://manifestsecurity.com">ManifestSecurity</a>. All
+      Rights Reserved.| <a href="License.txt" target="_blank" class="orange-text text-lighten-3">License</a> | <a
+        href="https://tools.pentestbox.org/#disclaimer" class="orange-text text-lighten-3"
+        target="_blank">Disclaimer</a>
     </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Copyright 2016. <a class="orange-text text-lighten-3" href="http://manifestsecurity.com">ManifestSecurity</a>. All Rights Reserved.| <a href="License.txt" target="_blank" class="orange-text text-lighten-3">License</a> | <a href="https://tools.pentestbox.org/#disclaimer" class="orange-text text-lighten-3" target="_blank">Disclaimer</a>
-      </div>
-    </div>
-  </footer>
+  </div>
+</footer>
 
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
 
-  <script type="text/javascript">
-  	 $(document).ready(function(){
+<script type="text/javascript">
+  $(document).ready(function () {
     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
     $('.modal-trigger').leanModal();
   });
 
-  </script>
-
-
-  <script>
-
-    $(function(){
-
-        $("#typed").typed({
-            strings: ["Welcome to PentestBox Website.", "This is PentestBox Console", "You will get same console after downloading it.", "Check it out it's features below","Hope you will like it :)"],
-            typeSpeed: 1,
-            backDelay: 500,
-            loop: false,
-            contentType: 'html', // or text
-            // defaults to false for infinite loop
-            loopCount: false,
-            callback: function(){ foo(); },
-            resetCallback: function() { newTyped(); }
-        });
-
-        $(".reset").click(function(){
-            $("#typed").typed('reset');
-        });
-
-    });
-
-    function newTyped(){ /* A new typed object */ }
-
-    function foo(){ console.log("Callback"); }
-
-
-      </script>
-      <script src="js/typed.js" type="text/javascript"></script>
-
-      <script type="text/javascript">
-      	$('.smoothscroll').on('click', function (e) {
-
-	 	e.preventDefault();
-
-   	var target = this.hash,
-    	$target = $(target);
-
-    	$('html, body').stop().animate({
-       	'scrollTop': $target.offset().top
-      }, 800, 'swing', function () {
-      	window.location.hash = target;
-      });
-
-  	});
-      </script>
-       <script>
-   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-   ga('create', 'UA-63456929-1', 'auto');
-   ga('send', 'pageview');
- </script>
- <script>
-/**
-* Function that tracks a click on an outbound link in Google Analytics.
-* This function takes a valid URL string as an argument, and uses that URL string
-* as the event label.
-*/
-var trackOutboundLink = function(url) {
-   ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
-     function () {
-     document.location = url;
-     }
-   });
-}
 </script>
 
-  </body>
+
+<script>
+
+  $(function () {
+
+    $("#typed").typed({
+      strings: ["Welcome to PentestBox Website.", "This is PentestBox Console", "You will get same console after downloading it.", "Check it out it's features below", "Hope you will like it :)"],
+      typeSpeed: 1,
+      backDelay: 500,
+      loop: false,
+      contentType: 'html', // or text
+      // defaults to false for infinite loop
+      loopCount: false,
+      callback: function () { foo(); },
+      resetCallback: function () { newTyped(); }
+    });
+
+    $(".reset").click(function () {
+      $("#typed").typed('reset');
+    });
+
+  });
+
+  function newTyped() { /* A new typed object */ }
+
+  function foo() { console.log("Callback"); }
+
+
+</script>
+<script src="js/typed.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+  $('.smoothscroll').on('click', function (e) {
+
+    e.preventDefault();
+
+    var target = this.hash,
+      $target = $(target);
+
+    $('html, body').stop().animate({
+      'scrollTop': $target.offset().top
+    }, 800, 'swing', function () {
+      window.location.hash = target;
+    });
+
+  });
+</script>
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-63456929-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<script>
+  /**
+  * Function that tracks a click on an outbound link in Google Analytics.
+  * This function takes a valid URL string as an argument, and uses that URL string
+  * as the event label.
+  */
+  var trackOutboundLink = function (url) {
+    ga('send', 'event', 'outbound', 'click', url, {
+      'hitCallback':
+        function () {
+          document.location = url;
+        }
+    });
+  }
+</script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</body>
+
 </html>
